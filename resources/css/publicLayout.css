@@ -1,0 +1,675 @@
+/* =========================================================
+   PUBLIC HEADER
+========================================================= */
+
+.public-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1030;
+
+    width: 100%;
+
+    background-color: transparent;
+
+    transition:
+        background-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+/* =========================================================
+   HEADER — ÉTAT INITIAL
+========================================================= */
+
+.public-header.header--transparent {
+    background-color: transparent;
+
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   HEADER — ÉTAT APRÈS SCROLL
+========================================================= */
+
+.public-header.header--scrolled {
+    background-color: #ffffff;
+
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.public-header .navbar {
+    min-height: 88px;
+
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+
+/* =========================================================
+   LOGO DUTRIEUX
+========================================================= */
+
+.public-header .navbar-brand-dutrieux {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    margin: 0;
+
+    line-height: 1.1;
+
+    text-decoration: none;
+}
+
+
+.public-header .navbar-brand-dutrieux .brand-name {
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    letter-spacing: 0.15em;
+
+    color: #ffffff;
+
+    transition: color 0.35s ease;
+}
+
+
+.public-header .navbar-brand-dutrieux .brand-tagline {
+    margin-top: 0.25rem;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: 0.7rem;
+    font-weight: 400;
+
+    letter-spacing: 0.3em;
+
+    color: #ffffff;
+
+    transition: color 0.35s ease;
+}
+
+
+/* Logo après scroll */
+
+.public-header.header--scrolled
+.navbar-brand-dutrieux .brand-name,
+
+.public-header.header--scrolled
+.navbar-brand-dutrieux .brand-tagline {
+    color: #8B1A1A;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.public-header .public-header__link {
+    position: relative;
+
+    color: #ffffff;
+
+    font-size: 0.9rem;
+    font-weight: 400;
+
+
+    transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+/* =========================================================
+   ÉTAT TRANSPARENT
+   HEADER SUR LE HERO
+========================================================= */
+
+/* Hover */
+.public-header.header--transparent .public-header__link:hover,
+.public-header.header--transparent .public-header__link:focus {
+    color: #0A131F;
+    opacity: 1;
+}
+
+
+/* Onglet actif */
+.public-header.header--transparent .public-header__link.active {
+    color: #0A131F;
+    opacity: 1;
+}
+
+
+/* Soulignement actif */
+.public-header.header--transparent .public-header__link.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0.8rem;
+    right: 0.8rem;
+    bottom: 0;
+
+    height: 2px;
+
+    background-color: #ffffff;
+
+    transform: scaleX(1);
+    transform-origin: center;
+
+    transition: transform 0.25s ease;
+}
+
+
+/* =========================================================
+   ÉTAT SCROLLED
+   HEADER BLANC
+========================================================= */
+
+.public-header.header--scrolled .public-header__link {
+    color: #0A131F;
+}
+
+
+/* Hover */
+.public-header.header--scrolled .public-header__link:hover,
+.public-header.header--scrolled .public-header__link:focus {
+    color: #8B1A1A;
+    opacity: 1;
+}
+
+
+/* Onglet actif */
+.public-header.header--scrolled .public-header__link.active {
+    color: #8B1A1A;
+    opacity: 1;
+}
+
+
+/* Soulignement actif */
+.public-header.header--scrolled .public-header__link.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0.8rem;
+    right: 0.8rem;
+    bottom: 0;
+
+    height: 2px;
+
+    background-color: #0A131F;
+
+    transform: scaleX(1);
+    transform-origin: center;
+
+    transition: transform 0.25s ease;
+}
+
+
+/* =========================================================
+   DASHBOARD / COMPTE
+========================================================= */
+
+.public-header .public-header__account {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 42px;
+
+    padding: 0.3rem 1.25rem;
+
+    border: 1px solid #d92727;
+    border-radius: 10px;
+
+    background-color: #d92727;
+    color: #ffffff;
+
+    font-size: 0.85rem;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.public-header .public-header__account:hover {
+    background-color: #b91f1f;
+
+    border-color: #b91f1f;
+
+    color: #ffffff;
+
+    transform: translateY(-1px);
+}
+
+
+/*
+ * Le bouton reste rouge dans les deux états.
+ * Il n'est donc pas nécessaire de lui appliquer
+ * une règle particulière pour header--scrolled.
+ */
+
+
+/* =========================================================
+   MOBILE TOGGLER
+========================================================= */
+
+.public-header .navbar-toggler {
+    padding: 0.35rem;
+
+    border: 0;
+}
+
+
+.public-header .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+/*
+ * État transparent :
+ * icône blanche
+ */
+
+.public-header.header--transparent
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+
+/*
+ * État scrollé :
+ * icône sombre
+ */
+
+.public-header.header--scrolled
+.navbar-toggler-icon {
+    filter: none;
+}
+
+
+/* =========================================================
+   LANGUAGE SWITCHER
+========================================================= */
+
+.public-header .public-header__language-button {
+    padding: 0.5rem 0;
+
+    border: 0;
+    border-radius: 0;
+
+    background: transparent;
+    color: #ffffff;
+
+    font-size: 0.85rem;
+    font-weight: 400;
+
+    box-shadow: none;
+
+    transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+/* Hover / focus transparent */
+
+.public-header.header--transparent
+.public-header__language-button:hover,
+
+.public-header.header--transparent
+.public-header__language-button:focus {
+    background: transparent;
+
+    color: #ffffff;
+
+    opacity: 0.75;
+
+    box-shadow: none;
+}
+
+
+/* Langue après scroll */
+
+.public-header.header--scrolled
+.public-header__language-button {
+    color: #202832;
+}
+
+
+/* Hover / focus après scroll */
+
+.public-header.header--scrolled
+.public-header__language-button:hover,
+
+.public-header.header--scrolled
+.public-header__language-button:focus {
+    background: transparent;
+
+    color: #8B1A1A;
+
+    opacity: 1;
+
+    box-shadow: none;
+}
+
+
+/* Flèche Bootstrap */
+
+.public-header .public-header__language-button::after {
+    margin-left: 0.35rem;
+
+    vertical-align: 0.15em;
+}
+
+
+/* =========================================================
+   LANGUAGE DROPDOWN
+========================================================= */
+
+.public-header .public-header__language .dropdown-menu {
+    min-width: 130px;
+
+    margin-top: 0.75rem;
+
+    padding: 0.4rem 0;
+
+    border: 1px solid #eeeeee;
+    border-radius: 0;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.public-header .public-header__language .dropdown-item {
+    padding: 0.5rem 0.9rem;
+
+    color: #202832;
+
+    font-size: 0.8rem;
+}
+
+
+.public-header .public-header__language .dropdown-item:hover {
+    background-color: #f8f7f5;
+}
+
+
+.public-header .public-header__language .dropdown-item.active {
+    background-color: transparent;
+
+    color: #d92727;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   PUBLIC FOOTER
+========================================================= */
+
+.public-footer {
+    padding: 5rem 0 1.5rem;
+
+    background-color: #071321;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   FOOTER — BRAND
+========================================================= */
+
+.public-footer__brand {
+    display: inline-flex;
+
+    flex-direction: column;
+
+    line-height: 1.1;
+
+    text-decoration: none;
+}
+
+
+.public-footer__brand-name {
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: 1.6rem;
+    font-weight: 400;
+
+    letter-spacing: 0.15em;
+
+    color: #ffffff;
+}
+
+
+.public-footer__brand-tagline {
+    margin-top: 0.25rem;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: 0.7rem;
+    font-weight: 400;
+
+    letter-spacing: 0.3em;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   FOOTER — DESCRIPTION
+========================================================= */
+
+.public-footer__description {
+    max-width: 360px;
+
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   FOOTER — TITRES
+========================================================= */
+
+.public-footer__title {
+    margin-bottom: 1.5rem;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: 1rem;
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   FOOTER — LIENS
+========================================================= */
+
+.public-footer__links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.7rem;
+}
+
+
+.public-footer__links a {
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 0.8rem;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        padding-left 0.25s ease;
+}
+
+
+.public-footer__links a:hover {
+    padding-left: 4px;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   FOOTER — CONTACT
+========================================================= */
+
+.public-footer__contact {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.9rem;
+}
+
+
+.public-footer__contact p {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 0.75rem;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+
+.public-footer__contact i {
+    flex-shrink: 0;
+
+    margin-top: 0.15rem;
+
+    color: #d92727;
+}
+
+
+.public-footer__contact a {
+    color: rgba(255, 255, 255, 0.65);
+
+    text-decoration: none;
+
+    transition: color 0.25s ease;
+}
+
+
+.public-footer__contact a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   FOOTER — BOTTOM
+========================================================= */
+
+.public-footer__bottom {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2rem;
+
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+.public-footer__bottom p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.45);
+
+    font-size: 0.7rem;
+}
+
+
+.public-footer__legal {
+    display: flex;
+
+    align-items: center;
+
+    gap: 1.5rem;
+}
+
+
+.public-footer__legal a {
+    color: rgba(255, 255, 255, 0.45);
+
+    font-size: 0.7rem;
+
+    text-decoration: none;
+
+    transition: color 0.25s ease;
+}
+
+
+.public-footer__legal a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+    .public-footer {
+        padding-top: 4rem;
+    }
+
+    .public-footer__bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 1rem;
+
+        margin-top: 3rem;
+    }
+
+    .public-footer__legal {
+        flex-wrap: wrap;
+
+        gap: 1rem;
+    }
+
+}

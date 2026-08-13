@@ -1,0 +1,2549 @@
+
+
+
+/* =========================================================
+   HOME HERO
+========================================================= */
+
+.home-hero {
+    position: relative;
+
+    width: 100%;
+    height: 927px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   IMAGE DE FOND
+========================================================= */
+
+.home-hero__background {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 0;
+
+    background-image: url('/public/build/assets/cab.jpeg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   FORME ROUGE
+========================================================= */
+
+.home-hero__shape {
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    z-index: 1;
+
+    width: 69%;
+
+    background-color: #8b1a1adc;
+
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        62% 100%,
+        0 100%
+    );
+}
+
+
+/* =========================================================
+   CONTENEUR
+========================================================= */
+
+.home-hero__container {
+    position: relative;
+
+    z-index: 2;
+
+    height: 100%;
+}
+
+
+/* =========================================================
+   CONTENU
+========================================================= */
+
+.home-hero__content {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+/* =========================================================
+   TITRE
+========================================================= */
+
+.home-hero__title {
+    max-width: 620px;
+
+    margin: 0;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: clamp(2.5rem, 4vw, 3.8rem);
+
+    font-weight: 700;
+
+    line-height: 1.12;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.home-hero__description {
+    max-width: 540px;
+
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+
+    color: #f0dede;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.home-hero__actions {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+
+/* =========================================================
+   BOUTONS
+========================================================= */
+
+.home-hero__button {
+    min-height: 48px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.75rem 1.5rem;
+
+    border-radius: 0;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+/* Bouton blanc */
+
+.home-hero__button--primary {
+    background-color: #ffffff;
+
+    border: 1px solid #ffffff;
+
+    color: #8B1A1A;
+}
+
+.home-hero__button--primary:hover {
+    background-color: #0A131F;
+
+    color: #ffffff;
+}
+
+
+/* Bouton outline */
+
+.home-hero__button--outline {
+    background-color: transparent;
+
+    border: 1px solid #ffffff;
+
+    color: #ffffff;
+}
+
+.home-hero__button--outline:hover {
+    background-color: #0A131F;
+
+    color: #ffffff;
+}
+
+.home-hero__button--outline span {
+    margin-left: 0.5rem;
+
+    font-size: 1.1rem;
+}
+
+
+/* =========================================================
+   HOME — CABINET
+========================================================= */
+
+.home-cabinet {
+    padding: 100px 0;
+    background-color: #FDFDFC;
+}
+
+
+/* =========================================================
+   COLONNE TEXTE
+========================================================= */
+
+.home-cabinet__content {
+    max-width: 430px;
+}
+
+.home-cabinet__kicker {
+    display: inline-block;
+
+    margin-bottom: 1.25rem;
+
+    color: #8B1A1A;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.home-cabinet__title {
+    margin: 0;
+
+    color: #0A131F;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 700;
+
+    line-height: 1.15;
+}
+
+.home-cabinet__description {
+    margin-top: 1.75rem;
+}
+
+.home-cabinet__description p {
+    margin-bottom: 1rem;
+
+    color: #626A73;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.home-cabinet__description p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   BOUTON
+========================================================= */
+
+.home-cabinet__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1.75rem;
+
+    padding: 0.8rem 1.35rem;
+
+    background-color: #8B1A1A;
+    color: #ffffff;
+
+    border: 1px solid #8B1A1A;
+    border-radius: 4px;
+
+    font-size:16px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.home-cabinet__button:hover {
+    background-color: #0A131F;
+    border-color: #0A131F;
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   VALEURS — GRILLE 2 × 2
+========================================================= */
+
+.home-cabinet__values {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 3rem 2rem;
+}
+
+.home-cabinet__value {
+    max-width: 190px;
+}
+
+.home-cabinet__icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-bottom: 1rem;
+
+    color: #8B1A1A;
+
+    font-size: 1.7rem;
+}
+
+.home-cabinet__value-title {
+    margin: 0 0 0.6rem;
+
+    color: #0A131F;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.home-cabinet__value-description {
+    margin: 0;
+
+    color: #737A82;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   VISUELS
+========================================================= */
+
+.home-cabinet__visual {
+    position: relative;
+
+    min-height: 570px;
+}
+
+
+/* Grande image */
+
+.home-cabinet__image--large {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 68%;
+    height: 440px;
+
+    overflow: hidden;
+}
+
+
+/* Petite image */
+
+.home-cabinet__image--small {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    width: 55%;
+    height: 330px;
+
+    overflow: visible;
+}
+
+
+/* Images */
+
+.home-cabinet__image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.home-cabinet__badge {
+    position: absolute;
+
+    left: -25px;
+    bottom: -25px;
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #8B1A1A;
+    color: #ffffff;
+
+    font-size: 1.35rem;
+}
+
+/* =========================================================
+   PHILOSOPHIE
+========================================================= */
+
+.home-philosophy {
+    position: relative;
+    min-height: 550px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+   ;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.home-philosophy__background {
+    position: absolute;
+    inset: 0;
+
+    z-index: 0;
+
+    overflow: hidden;
+}
+
+.home-philosophy__background img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.home-philosophy__overlay {
+    position: absolute;
+    inset: 0;    
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(105, 0, 9, 0.642) 20%,
+            rgba(68, 2, 7, 0.723) 70%,
+            rgba(63, 1, 6, 0.802) 100%
+        );
+}
+
+
+/* =========================================================
+   CONTENU
+========================================================= */
+
+.home-philosophy .container {
+    position: relative;
+    z-index: 2;
+}
+
+.home-philosophy__content {
+    display: flex;
+    align-items: stretch;
+
+    max-width: 720px;
+}
+
+
+/* =========================================================
+   LIGNE DÉCORATIVE
+========================================================= */
+
+.home-philosophy__line {
+    width: 5px;
+
+    flex-shrink: 0;
+
+    margin-right: 2rem;
+
+    background-color: #ffffff;
+}
+
+
+/* =========================================================
+   TEXTE
+========================================================= */
+
+.home-philosophy__text {
+    max-width: 650px;
+}
+
+
+.home-philosophy__title {
+    margin: 0;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: clamp(2rem, 3.2vw, 2.75rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: #ffffff;
+}
+
+
+.home-philosophy__description {
+    max-width: 570px;
+
+    margin: 1.5rem 0 0;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   LIEN PHILOSOPHIE
+========================================================= */
+.home-philosophy__statement {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 2rem;
+
+    color: #ffffff;
+}
+
+/* =========================================================
+   ICÔNE
+========================================================= */
+
+.home-philosophy__icon {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 50%;
+    background-color: #ffffff;
+
+    font-size: 1.15rem;
+
+}
+
+.home-philosophy__icon i {
+    line-height: 1;
+    color: #0A131F;
+}
+
+/* =========================================================
+   TEXTE
+========================================================= */
+
+.home-philosophy__statement-text {
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* =========================================================
+   EXPERTISE
+========================================================= */
+
+.home-expertise {
+    padding: 7rem 0;
+    background-color: #fdfdfc;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.home-expertise__header {
+    max-width: 620px;
+    margin-bottom: 3.5rem;
+}
+
+.home-expertise__kicker {
+    display: block;
+
+    margin-bottom: 1rem;
+
+    color: #8b1a1a;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.home-expertise__title {
+    margin: 0;
+
+    color: #0a131f;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: 700;
+
+    line-height: 1.25;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.home-expertise__grid {
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.home-expertise__card {
+    height: 100%;
+
+    min-height: 300px;
+
+    padding: 2rem 1.75rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+
+    border: 1px solid #eee3e3;
+    border-radius: 4px;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.home-expertise__card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(139, 26, 26, 0.25);
+
+    box-shadow: 0 15px 35px rgba(10, 19, 31, 0.07);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.home-expertise__card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.home-expertise__icon {
+    margin-bottom: 1.75rem;
+
+    color: #8b1a1a;
+
+    font-size: 2rem;
+}
+
+.home-expertise__icon i {
+    line-height: 1;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.home-expertise__card-title {
+    margin: 0 0 0.9rem;
+
+    color: #0a131f;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    letter-spacing: 0.06em;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.home-expertise__card-description {
+    margin: 0;
+
+    color: #68717b;
+
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   LINK
+========================================================= */
+
+.home-expertise__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    margin-top: 2rem;
+
+    color: #8b1a1a;
+
+    font-size: 0.77rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        gap 0.25s ease;
+}
+
+.home-expertise__link:hover {
+    color: #0a131f;
+    gap: 0.75rem;
+}
+
+.home-expertise__link i {
+    font-size: 0.8rem;
+}
+
+
+/* =========================================================
+   APPROACH
+========================================================= */
+
+.home-approach {
+    position: relative;
+    overflow: hidden;
+
+    padding: 7rem 0;
+
+    background-color: #8b1a1a;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   DÉCORATION
+========================================================= */
+
+.home-approach__decoration {
+    position: absolute;
+
+    top: -5rem;
+    right: -3rem;
+
+    color: #ffffff;
+
+    font-size: 18rem;
+
+    opacity: 0.035;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.home-approach__header {
+    position: relative;
+    z-index: 1;
+
+    max-width: 650px;
+
+    margin-bottom: 5rem;
+}
+
+
+.home-approach__kicker {
+    display: block;
+
+    margin-bottom: 1rem;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    letter-spacing: 0.18em;
+}
+
+
+.home-approach__title {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(2rem, 3.5vw, 2.7rem);
+
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+.home-approach__subtitle {
+    max-width: 600px;
+
+    margin: 1.25rem 0 0;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.home-approach__timeline {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    column-gap: 2rem;
+}
+
+
+/* =========================================================
+   LIGNE
+========================================================= */
+
+.home-approach__line {
+    position: absolute;
+
+    top: 34px;
+    left: 12.5%;
+    right: 12.5%;
+
+    height: 1px;
+
+    background-color: rgba(255, 255, 255, 0.45);
+
+    transform-origin: left center;
+
+    z-index: 0;
+}
+
+
+/* =========================================================
+   ÉTAPE
+========================================================= */
+
+.home-approach__step {
+    position: relative;
+
+    z-index: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   CERCLE
+========================================================= */
+
+.home-approach__circle {
+    width: 68px;
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    border-radius: 50%;
+
+    background-color: #8b1a1a;
+
+    color: #ffffff;
+
+    font-size: 1.35rem;
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.home-approach__step:hover .home-approach__circle {
+    background-color: #ffffff;
+
+    border-color: #ffffff;
+
+    color: #8b1a1a;
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================================================
+   CONTENU ÉTAPE
+========================================================= */
+
+.home-approach__step-content {
+    max-width: 220px;
+
+    margin-top: 1.5rem;
+}
+
+
+.home-approach__number {
+    display: block;
+
+    margin-bottom: 0.35rem;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.4rem;
+}
+
+
+.home-approach__step-title {
+    margin: 0 0 0.75rem;
+
+    color: #ffffff;
+
+    font-size: 0.85rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+}
+
+
+.home-approach__step-description {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.68);
+
+    font-size: 0.82rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   HOME — WHY CHOOSE US
+========================================================= */
+
+.home-why-us {
+    padding: 7rem 0;
+    background-color: #FDFDFC;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.home-why-us__content {
+    max-width: 540px;
+}
+
+
+/* =========================================================
+   KICKER
+========================================================= */
+
+.home-why-us__kicker {
+    display: inline-block;
+
+    margin-bottom: 1.25rem;
+
+    color: #8B1A1A;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.home-why-us__title {
+    max-width: 500px;
+
+    margin: 0 0 2.75rem;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #0A131F;
+
+    font-size: clamp(2rem, 3vw, 2.7rem);
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   POINTS
+========================================================= */
+
+.home-why-us__points {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.75rem;
+}
+
+
+/* =========================================================
+   POINT
+========================================================= */
+
+.home-why-us__point {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 1rem;
+}
+
+
+/* =========================================================
+   POINT ICON
+========================================================= */
+
+.home-why-us__point-icon {
+    flex: 0 0 32px;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 0.1rem;
+
+    border-radius: 50%;
+
+    background-color: #8B1A1A;
+
+    color: #ffffff;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   POINT CONTENT
+========================================================= */
+
+.home-why-us__point-content {
+    flex: 1;
+}
+
+
+/* =========================================================
+   POINT TITLE
+========================================================= */
+
+.home-why-us__point-title {
+    margin: 0 0 0.4rem;
+
+    color: #0A131F;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   POINT DESCRIPTION
+========================================================= */
+
+.home-why-us__point-description {
+    max-width: 430px;
+
+    margin: 0;
+
+    color: #6F747A;
+
+    font-size: 0.85rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   VISUAL
+========================================================= */
+
+.home-why-us__visual {
+    position: relative;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.home-why-us__image {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 4px;
+}
+
+
+.home-why-us__image img {
+    display: block;
+
+    width: 100%;
+    height: 470px;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   IMAGE HOVER
+========================================================= */
+
+.home-why-us__image img {
+    transition: transform 0.6s ease;
+}
+
+
+.home-why-us__visual:hover .home-why-us__image img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.home-why-us__badge {
+    position: absolute;
+
+    right: -18px;
+    bottom: -18px;
+
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #8B1A1A;
+
+    color: #ffffff;
+
+    font-size: 1.25rem;
+
+    z-index: 2;
+}
+
+
+.home-why-us__badge i {
+    display: block;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   HOME — TEAM
+======================================================== */
+
+.home-team {
+    padding: 4rem 0;
+    background-color: #F9F7F5;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.home-team__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 2rem;
+
+    margin-bottom: 3.5rem;
+}
+
+
+/* =========================================================
+   KICKER
+========================================================= */
+
+.home-team__kicker {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    color: #8B1A1A;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.home-team__title {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #0A131F;
+
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   CONTROLS
+========================================================= */
+
+.home-team__controls {
+    display: flex;
+    align-items: center;
+
+    gap: 0.75rem;
+}
+
+
+.home-team__control {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid #8B1A1A;
+    border-radius: 50%;
+
+    background-color: transparent;
+    color: #8B1A1A;
+
+    font-size: 0.95rem;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.home-team__control:hover {
+    background-color: #8B1A1A;
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   CAROUSEL
+========================================================= */
+
+.home-team__carousel {
+    position: relative;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.home-team__card {
+    min-height: 320px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2.5rem 2rem;
+
+    border: 1px solid rgba(10, 19, 31, 0.08);
+    border-radius: 4px;
+
+    background-color: #ffffff;
+
+    text-align: center;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+.home-team__card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(139, 26, 26, 0.18);
+
+    box-shadow: 0 18px 45px rgba(10, 19, 31, 0.08);
+}
+
+
+/* =========================================================
+   PHOTO
+========================================================= */
+
+.home-team__photo {
+    width: 96px;
+    height: 96px;
+
+    margin-bottom: 1.5rem;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    background-color: #eeeeee;
+}
+
+
+.home-team__photo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: grayscale(100%);
+
+    transition:
+        filter 0.4s ease,
+        transform 0.5s ease;
+}
+
+
+.home-team__card:hover .home-team__photo img {
+    filter: grayscale(0);
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   NAME
+========================================================= */
+
+.home-team__name {
+    margin: 0 0 0.6rem;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #0A131F;
+
+    font-size: 1.05rem;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   ROLE
+========================================================= */
+
+.home-team__role {
+    display: block;
+
+    margin-bottom: 0.75rem;
+
+    color: #8B1A1A;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   EMAIL
+========================================================= */
+
+.home-team__email {
+    color: #8B1A1A;
+
+    font-size: 0.78rem;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+.home-team__email:hover {
+    color: #0A131F;
+}
+
+
+/* =========================================================
+   INDICATORS
+========================================================= */
+
+.home-team__indicators {
+    position: static;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    margin: 2.5rem 0 0;
+
+}
+
+
+.home-team__indicators button {
+    width: 8px;
+    height: 8px;
+
+    margin: 0;
+
+    padding: 0;
+
+    border: 0;
+    border-radius: 50%;
+
+    background-color: #C9C1C1;
+
+    opacity: 1;
+
+    transition:
+        width 0.3s ease,
+        border-radius 0.3s ease,
+        background-color 0.3s ease;
+}
+
+
+.home-team__indicators button.active {
+    width: 24px;
+
+    border-radius: 10px;
+
+    background-color: #8B1A1A;
+}
+
+
+/* =========================================================
+   TEAM CARD ANIMATION
+========================================================= */
+
+.animate-team-card {
+    opacity: 0;
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+
+/*
+ * Lorsque la slide devient active,
+ * les cartes se révèlent.
+ */
+
+.carousel-item.active .animate-team-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.home-final-cta {
+    position: relative;
+
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 5rem 0;
+
+    overflow: hidden;
+
+    background-color: #5c0f0f;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   MOTIF DÉCORATIF
+========================================================= */
+
+.home-final-cta__pattern {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 0;
+
+    font-size: 20rem;
+
+    line-height: 1;
+
+    color: #ffffff;
+
+    opacity: 0.035;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTENU
+========================================================= */
+
+.home-final-cta__content {
+    position: relative;
+
+    z-index: 1;
+
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   TITRE
+========================================================= */
+
+.home-final-cta__title {
+    margin: 0;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: clamp(2rem, 3vw, 2.5rem);
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.home-final-cta__description {
+    max-width: 560px;
+
+    margin: 1.25rem auto 0;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 0.95rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   BOUTON
+========================================================= */
+
+.home-final-cta__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.7rem;
+
+    margin-top: 2rem;
+
+    min-height: 48px;
+
+    padding: 0.75rem 1.5rem;
+
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+
+    background-color: transparent;
+
+    color: #ffffff;
+
+    border-color: #ffffff;
+
+    transform: translateY(-2px);
+
+
+    
+
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.home-final-cta__button i {
+    font-size: 0.9rem;
+
+    transition: transform 0.25s ease;
+}
+
+
+.home-final-cta__button:hover {
+    background-color: #ffffff;
+
+    color: #8B1A1A;
+
+    border-color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+.home-final-cta__button:hover i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+    .home-final-cta {
+        min-height: 300px;
+
+        padding: 4rem 0;
+    }
+
+
+    .home-final-cta__title {
+        font-size: 1.9rem;
+    }
+
+
+    .home-final-cta__description {
+        font-size: 0.9rem;
+    }
+
+
+    .home-final-cta__pattern {
+        font-size: 13rem;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+    .home-team {
+        padding: 5.5rem 0;
+    }
+
+
+    .home-team__header {
+        margin-bottom: 3rem;
+    }
+
+
+    .home-team__card {
+        min-height: 300px;
+
+        padding: 2.25rem 1.5rem;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+    .home-team {
+        padding: 4.5rem 0;
+    }
+
+
+    .home-team__header {
+        align-items: flex-start;
+        flex-direction: column;
+
+        margin-bottom: 2.5rem;
+    }
+
+
+    .home-team__title {
+        font-size: 2rem;
+    }
+
+
+    .home-team__controls {
+        margin-top: 0.5rem;
+    }
+
+
+    .home-team__card {
+        min-height: 290px;
+
+        padding: 2rem 1.5rem;
+    }
+
+
+    .home-team__photo {
+        width: 88px;
+        height: 88px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+    .home-why-us {
+        padding: 5.5rem 0;
+    }
+
+
+    .home-why-us__content {
+        max-width: 100%;
+    }
+
+
+    .home-why-us__title {
+        max-width: 650px;
+    }
+
+
+    .home-why-us__image img {
+        height: 420px;
+    }
+
+
+    .home-why-us__badge {
+        right: -10px;
+        bottom: -10px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+    .home-why-us {
+        padding: 4.5rem 0;
+    }
+
+
+    .home-why-us__title {
+        margin-bottom: 2.25rem;
+
+        font-size: 2rem;
+    }
+
+
+    .home-why-us__points {
+        gap: 1.5rem;
+    }
+
+
+    .home-why-us__point {
+        gap: 0.85rem;
+    }
+
+
+    .home-why-us__point-icon {
+        flex-basis: 30px;
+
+        width: 30px;
+        height: 30px;
+
+        font-size: 0.8rem;
+    }
+
+
+    .home-why-us__image {
+        margin-top: 1rem;
+    }
+
+
+    .home-why-us__image img {
+        height: 320px;
+    }
+
+
+    .home-why-us__badge {
+        right: 0;
+        bottom: -12px;
+
+        width: 60px;
+  /* =========================================================
+   HOME — WHY CHOOSE US
+========================================================= */
+
+.home-why-us {
+    padding: 7rem 0;
+    background-color: #FDFDFC;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.home-why-us__content {
+    max-width: 540px;
+}
+
+
+/* =========================================================
+   KICKER
+========================================================= */
+
+.home-why-us__kicker {
+    display: inline-block;
+
+    margin-bottom: 1.25rem;
+
+    color: #8B1A1A;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.home-why-us__title {
+    max-width: 500px;
+
+    margin: 0 0 2.75rem;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #0A131F;
+
+    font-size: clamp(2rem, 3vw, 2.7rem);
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   POINTS
+========================================================= */
+
+.home-why-us__points {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.75rem;
+}
+
+
+/* =========================================================
+   POINT
+========================================================= */
+
+.home-why-us__point {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 1rem;
+}
+
+
+/* =========================================================
+   POINT ICON
+========================================================= */
+
+.home-why-us__point-icon {
+    flex: 0 0 32px;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 0.1rem;
+
+    border-radius: 50%;
+
+    background-color: #8B1A1A;
+
+    color: #ffffff;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   POINT CONTENT
+========================================================= */
+
+.home-why-us__point-content {
+    flex: 1;
+}
+
+
+/* =========================================================
+   POINT TITLE
+========================================================= */
+
+.home-why-us__point-title {
+    margin: 0 0 0.4rem;
+
+    color: #0A131F;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   POINT DESCRIPTION
+========================================================= */
+
+.home-why-us__point-description {
+    max-width: 430px;
+
+    margin: 0;
+
+    color: #6F747A;
+
+    font-size: 0.85rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   VISUAL
+========================================================= */
+
+.home-why-us__visual {
+    position: relative;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.home-why-us__image {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 4px;
+}
+
+
+.home-why-us__image img {
+    display: block;
+
+    width: 100%;
+    height: 470px;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   IMAGE HOVER
+========================================================= */
+
+.home-why-us__image img {
+    transition: transform 0.6s ease;
+}
+
+
+.home-why-us__visual:hover .home-why-us__image img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.home-why-us__badge {
+    position: absolute;
+
+    right: -18px;
+    bottom: -18px;
+
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #8B1A1A;
+
+    color: #ffffff;
+
+    font-size: 1.25rem;
+
+    z-index: 2;
+}
+
+
+.home-why-us__badge i {
+    display: block;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+    .home-why-us {
+        padding: 5.5rem 0;
+    }
+
+
+    .home-why-us__content {
+        max-width: 100%;
+    }
+
+
+    .home-why-us__title {
+        max-width: 650px;
+    }
+
+
+    .home-why-us__image img {
+        height: 420px;
+    }
+
+
+    .home-why-us__badge {
+        right: -10px;
+        bottom: -10px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+    .home-why-us {
+        padding: 4.5rem 0;
+    }
+
+
+    .home-why-us__title {
+        margin-bottom: 2.25rem;
+
+        font-size: 2rem;
+    }
+
+
+    .home-why-us__points {
+        gap: 1.5rem;
+    }
+
+
+    .home-why-us__point {
+        gap: 0.85rem;
+    }
+
+
+    .home-why-us__point-icon {
+        flex-basis: 30px;
+
+        width: 30px;
+        height: 30px;
+
+        font-size: 0.8rem;
+    }
+
+
+    .home-why-us__image {
+        margin-top: 1rem;
+    }
+
+
+    .home-why-us__image img {
+        height: 320px;
+    }
+
+
+    .home-why-us__badge {
+        right: 0;
+        bottom: -12px;
+
+        width: 60px;
+        height: 60px;
+
+        font-size: 1rem;
+    }
+}      height: 60px;
+
+        font-size: 1rem;
+    }
+}
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+    .home-approach {
+        padding: 5rem 0;
+    }
+
+    .home-approach__header {
+        margin-bottom: 4rem;
+    }
+
+    .home-approach__timeline {
+        grid-template-columns: repeat(2, 1fr);
+
+        row-gap: 3.5rem;
+    }
+
+    .home-approach__line {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 575.98px) {
+
+    .home-approach {
+        padding: 4.5rem 0;
+    }
+
+    .home-approach__timeline {
+        grid-template-columns: 1fr;
+
+        row-gap: 3rem;
+    }
+
+    .home-approach__step-content {
+        max-width: 280px;
+    }
+
+}
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+    .home-philosophy {
+        min-height: 480px;
+    }
+
+    .home-philosophy__content {
+        max-width: 650px;
+    }
+
+}
+
+
+@media (max-width: 767.98px) {
+
+    .home-philosophy {
+        min-height: 520px;
+    }
+
+    .home-philosophy__content {
+        max-width: 100%;
+    }
+
+    .home-philosophy__line {
+        margin-right: 1.25rem;
+    }
+
+    .home-philosophy__title {
+        font-size: 2rem;
+    }
+
+    .home-philosophy__description {
+        font-size: 0.9rem;
+    }
+
+    .home-philosophy__play {
+        width: 48px;
+        height: 48px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+    .home-cabinet {
+        padding: 90px 0;
+    }
+
+    .home-cabinet__content {
+        max-width: 600px;
+    }
+
+    .home-cabinet__visual {
+        min-height: 600px;
+        margin-top: 2rem;
+    }
+
+}
+
+
+@media (max-width: 767.98px) {
+
+    .home-cabinet {
+        padding: 70px 0;
+    }
+
+    .home-cabinet__title {
+        font-size: 2rem;
+    }
+
+    .home-cabinet__values {
+        gap: 2rem 1.5rem;
+
+        margin-top: 2rem;
+    }
+
+    .home-cabinet__value {
+        max-width: none;
+    }
+
+    .home-cabinet__visual {
+        min-height: 480px;
+        margin-top: 2rem;
+    }
+
+    .home-cabinet__image--large {
+        width: 72%;
+        height: 360px;
+    }
+
+    .home-cabinet__image--small {
+        width: 55%;
+        height: 270px;
+    }
+
+    .home-cabinet__badge {
+        width: 60px;
+        height: 60px;
+
+        left: -15px;
+        bottom: -15px;
+    }
+
+}
+
+/* =========================================================
+   TABLETTE
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+    .home-hero {
+        height: 800px;
+    }
+
+    .home-hero__shape {
+        width: 72%;
+
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            86% 100%,
+            0 100%
+        );
+    }
+
+    .home-hero__title {
+        font-size: clamp(2.3rem, 5vw, 3.2rem);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+    .home-hero {
+        height: auto;
+        min-height: 750px;
+    }
+
+    .home-hero__background {
+        background-position: center;
+    }
+
+    .home-hero__shape {
+        width: 100%;
+
+        clip-path: none;
+
+        background-color: #8B1A1A;
+    }
+
+    .home-hero__content {
+        padding-top: 7rem;
+        padding-bottom: 4rem;
+    }
+
+    .home-hero__title {
+        font-size: 2.4rem;
+    }
+
+    .home-hero__description {
+        font-size: 0.95rem;
+    }
+
+    .home-hero__actions {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .home-hero__button {
+        width: 100%;
+    }
+}
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+    .public-header .navbar-collapse {
+        margin-top: 1rem;
+
+        padding: 1rem;
+
+        background-color: rgba(0, 0, 0, 0.92);
+    }
+
+    .public-header .navbar-nav {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .public-header .public-header__link {
+        padding: 0.7rem 0 !important;
+    }
+
+    .public-header .d-flex.align-items-center.gap-3 {
+        align-items: flex-start !important;
+        flex-direction: column;
+
+        margin-top: 0.75rem;
+        gap: 0.75rem !important;
+    }
+
+    .public-header .public-header__contact {
+        width: 100%;
+    }
+}

@@ -1,0 +1,209 @@
+
+.contact-wrapper {
+   margin: 50px 0;
+}
+
+/* ============================
+   INFORMATIONS
+============================ */
+
+.contact-info {
+     position: relative;
+    overflow: hidden;
+
+    border-radius: 14px;
+    height: 100%;
+    padding: 3.5rem 2.5rem;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+}
+
+/* ============================
+   IMAGE
+============================ */
+
+.contact-info__image {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: 0;
+}
+
+
+/* ============================
+   OVERLAY
+============================ */
+
+.contact-info__overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(255, 255, 255, 0.922);
+
+    z-index: 1;
+}
+
+
+/* ============================
+   CONTENU
+============================ */
+
+.contact-info__content {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-info__title {
+    margin-bottom: 3rem;
+
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    color: #741111;
+}
+
+.contact-info__items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-info__icon {
+    flex: 0 0 18px;
+
+    margin-top: 3px;
+
+    font-size: 1rem;
+    color: #741111;
+}
+
+.contact-info__label {
+    margin-bottom: 0.3rem;
+
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    color: #555;
+}
+
+.contact-info__value {
+    font-size: 0.9rem;
+    line-height: 1.6;
+
+    color: #444;
+}
+
+.contact-info__link {
+    text-decoration: none;
+    color: #741111;
+}
+
+.contact-info__appointment {
+    margin-top: 0.5rem;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    color: #741111;
+}
+
+
+/* ============================
+   FORMULAIRE
+============================ */
+
+.contact-form {
+    height: 100%;
+    padding: 3.5rem 4rem;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+}
+
+.contact-field {
+    margin-bottom: 1.5rem;
+}
+
+.contact-field .form-control {
+    border: none;
+    border-bottom: 1px solid #e7dddd;
+    border-radius: 0;
+
+    background: transparent;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    box-shadow: none;
+}
+
+.contact-field .form-control:focus {
+    border-bottom-color: #741111;
+    box-shadow: none;
+}
+
+.contact-field label {
+    padding-left: 0;
+
+    color: #999;
+}
+
+.contact-field__textarea {
+    min-height: 140px !important;
+}
+
+
+/* ============================
+   RGPD
+============================ */
+
+.contact-consent {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    font-size: 0.75rem;
+    line-height: 1.6;
+
+    color: #777;
+}
+
+.contact-consent a {
+    color: #741111;
+}
+
+
+/* ============================
+   BOUTON
+============================ */
+
+.contact-form__button {
+    padding: 0.8rem 1.4rem;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #741111;
+    color: #fff;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.contact-form__button:hover {
+    background: #5c0f0f;
+    color: #fff;
+}
+
+.contact-form__button i {
+    margin-left: 0.5rem;
+}

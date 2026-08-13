@@ -1,0 +1,892 @@
+.main-contain {
+    margin: 60px 0;
+}
+
+
+/* ============================================================
+   INFORMATIONS DU CABINET
+============================================================ */
+
+.main-contain-info {
+    height: 100%;
+
+    padding: 2.5rem;
+
+    background: #fff;
+
+    border: 1px solid #f0e0e0;
+    border-radius: 14px;
+}
+
+
+/* ============================================================
+   TITRE
+============================================================ */
+
+.main-contain-info__title {
+    margin-bottom: 2.5rem;
+
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.3;
+
+    color: #333;
+}
+
+
+/* ============================================================
+   BLOCS
+============================================================ */
+
+.main-contain-info__block {
+    margin-bottom: 2rem;
+}
+
+.main-contain-info__block:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ============================================================
+   LABEL
+============================================================ */
+
+.main-contain-info__label {
+    margin-bottom: 0.5rem;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #741111;
+}
+
+
+/* ============================================================
+   VALEUR
+============================================================ */
+
+.main-contain-info__value {
+    margin: 0;
+
+    font-size: 0.88rem;
+    line-height: 1.7;
+
+    color: #555;
+}
+
+.main-contain-info__value strong {
+    font-weight: 700;
+    color: #333;
+}
+
+
+/* ============================================================
+   LIEN EMAIL
+============================================================ */
+
+.main-contain-info__link {
+    color: #555;
+    text-decoration: none;
+}
+
+.main-contain-info__link:hover {
+    color: #741111;
+}
+
+
+/* ============================================================
+   HORAIRES
+============================================================ */
+
+.main-contain-info__hours {
+    width: 100%;
+}
+
+.main-contain-info__hours-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+
+    font-size: 0.82rem;
+    line-height: 1.6;
+
+    color: #555;
+}
+
+.main-contain-info__hours-row span:first-child {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.main-contain-info__hours-row span:last-child {
+    text-align: right;
+}
+
+/* =========================================================
+   MAIN CONTAIN FORM
+========================================================= */
+
+.main-contain-form {
+    background: #f9f1f1;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+
+/* =========================================================
+   FORMULAIRE
+========================================================= */
+
+.appointment-form {
+    width: 100%;
+}
+
+
+/* =========================================================
+   TITRE PRINCIPAL
+========================================================= */
+
+.appointment-form__header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5d5d5;
+}
+
+.appointment-form__title {
+    margin: 0;
+
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    color: #1a1a1a;
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.appointment-form__section {
+    margin-bottom: 2rem;
+}
+
+
+/* =========================================================
+   LABELS / PETITS TITRES
+========================================================= */
+
+.appointment-form__section-title,
+.appointment-form__label {
+    display: block;
+
+    margin-bottom: 0.6rem;
+
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: #8a8a8a;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   CALENDRIER
+========================================================= */
+
+.appointment-calendar {
+    width: 100%;
+}
+
+
+/* =========================================================
+   CONTENEUR FLATPICKR
+========================================================= */
+
+.flatpickr-calendar {
+    width: 100% !important;
+    min-width: 380px;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+    background: transparent;
+
+    border: none;
+
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.flatpickr-months {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    padding-top: 1rem !important;
+    font-family: Playfair Display, Georgia, 'Times New Roman', serif;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    height: 42px;
+}
+
+
+.flatpickr-month {
+    height: 42px;
+}
+
+
+/* =========================================================
+   MOIS
+========================================================= */
+
+/* .flatpickr-current-month {
+
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: auto;
+
+    padding: 0;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+    color: #1a1a1a;
+
+    text-align: center;
+} */
+
+
+/*
+   Mois
+*/
+
+
+/* .flatpickr-current-month
+.flatpickr-monthDropdown-months {
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    margin: 0;
+    padding: 0;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+    color: #1a1a1a;
+} */
+
+
+/*
+   Année
+*/
+
+/* 
+.flatpickr-current-month
+.numInputWrapper {
+
+    width: auto;
+} */
+
+
+
+.flatpickr-current-month
+.numInput {
+
+    width: auto;
+    font-weight: 700;
+    font-size: 1.2rem !important;
+    border: none;
+
+    font-family: Playfair Display, Georgia, 'Times New Roman', serif;
+
+    pointer-events: none;
+}
+
+
+/* Suppression des petites flèches de l'année */
+
+
+.flatpickr-current-month
+.numInputWrapper
+.arrowUp,
+
+
+.flatpickr-current-month
+.numInputWrapper
+.arrowDown {
+
+    display: none;
+}
+
+
+/* =========================================================
+   FLÈCHES DE NAVIGATION
+========================================================= */
+
+.flatpickr-prev-month,
+.flatpickr-next-month {
+
+    position: absolute;
+    top: 25% !important; /*   
+    right: 5% !important; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    padding: 0;
+
+    border: 1px solid #e5d5d5;
+
+    border-radius: 50%;
+
+    color: #333;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.flatpickr-prev-month {
+    left: 5% !important;
+}
+
+
+.flatpickr-next-month {
+    right: 5% !important;
+}
+
+
+
+.flatpickr-prev-month
+svg,
+
+
+.flatpickr-next-month
+svg {
+
+    width: 13px;
+    height: 13px;
+
+    fill: #333;
+}
+
+
+.appointment-calendar
+.flatpickr-prev-month:hover,
+
+.appointment-calendar
+.flatpickr-next-month:hover {
+
+    background: #f9f1f1;
+
+    border-color: #741111;
+
+    color: #741111;
+}
+
+
+.appointment-calendar
+.flatpickr-prev-month:hover
+svg,
+
+.appointment-calendar
+.flatpickr-next-month:hover
+svg {
+
+    fill: #741111;
+}
+
+
+/* =========================================================
+   JOURS DE LA SEMAINE
+========================================================= */
+
+.appointment-calendar .flatpickr-weekdays {
+
+    height: 32px;
+
+    margin-bottom: 0.5rem;
+
+    background: transparent;
+}
+
+
+.appointment-calendar .flatpickr-weekday {
+
+    font-size: 0.7rem;
+
+    font-weight: 400;
+
+    letter-spacing: 0.04em;
+
+    text-transform: uppercase;
+
+    color: #a0a0a0;
+
+    background: transparent;
+}
+
+
+/* =========================================================
+   GRILLE DES DATES
+========================================================= */
+
+.appointment-calendar .flatpickr-days {
+
+    width: 100%;
+}
+
+
+.appointment-calendar .dayContainer {
+
+    width: 100%;
+
+    min-width: 100%;
+    max-width: 100%;
+
+    padding: 0;
+}
+
+
+/* =========================================================
+   JOUR
+========================================================= */
+
+.appointment-calendar .flatpickr-day {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    max-width: 36px;
+
+    height: 36px;
+
+    margin: 2px auto;
+
+    border: none;
+
+    border-radius: 50%;
+
+    font-size: 0.9rem;
+
+    font-weight: 400;
+
+    color: #333;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+/* =========================================================
+   JOURS HORS MOIS
+========================================================= */
+
+.appointment-calendar
+.flatpickr-day.prevMonthDay,
+
+.appointment-calendar
+.flatpickr-day.nextMonthDay {
+
+    color: #d0d0d0;
+
+    background: transparent;
+}
+
+
+/* =========================================================
+   JOURS DÉSACTIVÉS
+========================================================= */
+
+.appointment-calendar
+.flatpickr-day.disabled {
+
+    color: #d0d0d0;
+
+    background: transparent;
+
+    cursor: default;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.appointment-calendar
+.flatpickr-day:not(.disabled):not(.selected):hover {
+
+    background: #f2eaea;
+
+    border: none;
+
+    color: #741111;
+}
+
+
+/* =========================================================
+   JOUR SÉLECTIONNÉ
+========================================================= */
+
+.appointment-calendar
+.flatpickr-day.selected,
+
+.appointment-calendar
+.flatpickr-day.selected:hover {
+
+    background: #5c1010;
+
+    border: none;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   AUJOURD'HUI
+========================================================= */
+
+.appointment-calendar
+.flatpickr-day.today {
+
+    border: 1px solid #741111;
+
+    color: #741111;
+}
+
+
+.appointment-calendar
+.flatpickr-day.today:hover {
+
+    background: #f2eaea;
+
+    color: #741111;
+}
+
+
+/*
+   Aujourd'hui + sélectionné
+*/
+
+.appointment-calendar
+.flatpickr-day.today.selected {
+
+    background: #5c1010;
+
+    border: none;
+
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   SELECTS
+========================================================= */
+
+.appointment-form__select {
+    min-height: 48px;
+
+    padding: 0.7rem 2.5rem 0.7rem 0.9rem;
+
+    background-color: #fff;
+
+    border: 1px solid #e0d0d0;
+    border-radius: 6px;
+
+    color: #333;
+
+    font-size: 0.9rem;
+
+    box-shadow: none;
+}
+
+.appointment-form__select:focus {
+    border-color: #741111;
+
+    box-shadow: 0 0 0 0.15rem rgba(116, 17, 17, 0.08);
+}
+
+
+/* Placeholder des select */
+
+.appointment-form__select option:first-child {
+    color: #8a8a8a;
+}
+
+
+/* =========================================================
+   TITRE "VOS COORDONNÉES"
+========================================================= */
+
+.appointment-form__section-header {
+    margin-bottom: 1.5rem;
+
+    padding-bottom: 0.9rem;
+
+    border-bottom: 1px solid #e5d5d5;
+}
+
+.appointment-form__subtitle {
+    margin: 0;
+
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    color: #1a1a1a;
+}
+
+
+/* =========================================================
+   LABELS DES CHAMPS
+========================================================= */
+
+.appointment-form__label {
+    margin-bottom: 0.5rem;
+
+    font-weight: 600;
+
+    color: #777;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.appointment-form__input {
+    min-height: 48px;
+
+    padding: 0.7rem 0.9rem;
+
+    background: #fff;
+
+    border: 1px solid #e0d0d0;
+    border-radius: 6px;
+
+    color: #333;
+
+    font-size: 0.9rem;
+
+    box-shadow: none;
+}
+
+.appointment-form__input::placeholder {
+    color: #b5b5b5;
+    opacity: 1;
+}
+
+.appointment-form__input:focus {
+    background: #fff;
+
+    border-color: #741111;
+
+    box-shadow: 0 0 0 0.15rem rgba(116, 17, 17, 0.08);
+}
+
+
+/* =========================================================
+   TEXTAREA
+========================================================= */
+
+.appointment-form__textarea {
+    min-height: 120px;
+
+    padding: 0.8rem 0.9rem;
+
+    background: #fff;
+
+    border: 1px solid #e0d0d0;
+    border-radius: 6px;
+
+    color: #333;
+
+    font-size: 0.9rem;
+
+    resize: vertical;
+
+    box-shadow: none;
+}
+
+.appointment-form__textarea::placeholder {
+    color: #b5b5b5;
+    opacity: 1;
+}
+
+.appointment-form__textarea:focus {
+    background: #fff;
+
+    border-color: #741111;
+
+    box-shadow: 0 0 0 0.15rem rgba(116, 17, 17, 0.08);
+}
+
+
+/* =========================================================
+   FOOTER / BOUTON
+========================================================= */
+
+.appointment-form__footer {
+    margin-top: 2rem;
+
+    padding: 1.25rem;
+
+    background: #fdfaf9;
+
+    border-radius: 8px;
+}
+
+
+/* Bouton */
+
+.appointment-form__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    min-height: 48px;
+
+    padding: 0.75rem 1rem;
+
+    background: #741111;
+
+    border: 1px solid #741111;
+    border-radius: 7px;
+
+    color: #fff;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.appointment-form__submit:hover {
+    background: #5c1010;
+    border-color: #5c1010;
+
+    color: #fff;
+}
+
+.appointment-form__submit:focus {
+    background: #5c1010;
+    border-color: #5c1010;
+
+    color: #fff;
+
+    box-shadow: 0 0 0 0.2rem rgba(116, 17, 17, 0.15);
+}
+
+.appointment-form__submit i {
+    margin-left: 0.6rem;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+    .main-contain-form {
+        padding: 1.25rem;
+    }
+
+    .appointment-calendar {
+        padding: 1rem;
+    }
+
+    .appointment-calendar .flatpickr-calendar {
+        max-width: 100%;
+    }
+
+    .appointment-calendar .flatpickr-day {
+        width: 34px;
+        max-width: 34px;
+        height: 34px;
+    }
+
+    .appointment-form__title {
+        font-size: 1.35rem;
+    }
+
+    .appointment-form__subtitle {
+        font-size: 1.1rem;
+    }
+
+    .appointment-form__footer {
+        padding: 1rem;
+    }
+}
