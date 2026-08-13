@@ -8,8 +8,6 @@
 ============================================================ */
 
 .main-contain-info {
-    height: 100%;
-
     padding: 2.5rem;
 
     background: #fff;
@@ -143,6 +141,7 @@
 
 .appointment-form {
     width: 100%;
+    
 }
 
 
@@ -209,6 +208,8 @@
 
 .appointment-calendar {
     width: 100%;
+    
+    
 }
 
 
@@ -217,6 +218,8 @@
 ========================================================= */
 
 .flatpickr-calendar {
+    border: 1px solid #e0d0d0 !important;
+    border-radius: 8px !important;
     width: 100% !important;
     min-width: 380px;
 
@@ -225,8 +228,6 @@
     padding: 0;
 
     background: transparent;
-
-    border: none;
 
     box-shadow: none;
 }
@@ -257,74 +258,6 @@
 /* =========================================================
    MOIS
 ========================================================= */
-
-/* .flatpickr-current-month {
-
-    position: absolute;
-
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    width: auto;
-
-    padding: 0;
-
-    font-family: Georgia, 'Times New Roman', serif;
-
-    font-size: 1.2rem;
-
-    font-weight: 700;
-
-    color: #1a1a1a;
-
-    text-align: center;
-} */
-
-
-/*
-   Mois
-*/
-
-
-/* .flatpickr-current-month
-.flatpickr-monthDropdown-months {
-
-    appearance: none;
-    -webkit-appearance: none;
-
-    margin: 0;
-    padding: 0;
-
-    border: none;
-
-    outline: none;
-
-    background: transparent;
-
-    font-family: Georgia, 'Times New Roman', serif;
-
-    font-size: 1.2rem;
-
-    font-weight: 700;
-
-    color: #1a1a1a;
-} */
-
-
-/*
-   Année
-*/
-
-/* 
-.flatpickr-current-month
-.numInputWrapper {
-
-    width: auto;
-} */
-
-
-
 .flatpickr-current-month
 .numInput {
 
@@ -363,8 +296,7 @@
 .flatpickr-next-month {
 
     position: absolute;
-    top: 25% !important; /*   
-    right: 5% !important; */
+    top: 25% !important; 
 
     display: flex;
     align-items: center;
@@ -375,18 +307,18 @@
 
     padding: 0;
 
-    border: 1px solid #e5d5d5;
+    border: 1px solid #e5d5d5 !important;
 
-    border-radius: 50%;
+    border-radius: 50% !important;
 
-    color: #333;
+    color: #333 !important;
 
-    cursor: pointer;
+    cursor: pointer !important;
 
     transition:
-        background-color 0.2s ease,
-        border-color 0.2s ease,
-        color 0.2s ease;
+        background-color 0.2s ease, 
+        border-color 0.2s ease ,
+        color 0.2s ease !important;
 }
 
 
@@ -403,41 +335,33 @@
 
 .flatpickr-prev-month
 svg,
-
-
 .flatpickr-next-month
 svg {
 
-    width: 13px;
-    height: 13px;
+    width: 17px !important ;
+    height: 17px !important;
 
-    fill: #333;
+    fill: #333 !important;
 }
 
-
-.appointment-calendar
 .flatpickr-prev-month:hover,
 
-.appointment-calendar
 .flatpickr-next-month:hover {
 
-    background: #f9f1f1;
+    background: #eb82828c !important;
 
-    border-color: #741111;
+    color: #ffffff !important;
 
-    color: #741111;
+    font-weight: bold !important;
 }
 
-
-.appointment-calendar
 .flatpickr-prev-month:hover
 svg,
 
-.appointment-calendar
 .flatpickr-next-month:hover
 svg {
 
-    fill: #741111;
+    fill: #ffffff !important;
 }
 
 
@@ -445,29 +369,25 @@ svg {
    JOURS DE LA SEMAINE
 ========================================================= */
 
-.appointment-calendar .flatpickr-weekdays {
+.flatpickr-weekdays {
+    width: 100% !important;
+    height: 32px !important;
 
-    height: 32px;
-
-    margin-bottom: 0.5rem;
-
-    background: transparent;
 }
 
 
-.appointment-calendar .flatpickr-weekday {
+.flatpickr-weekday {
 
-    font-size: 0.7rem;
+    font-size: 17px !important;
 
-    font-weight: 400;
+    font-weight: 400 !important;
+    font-family: Open Sans;
 
-    letter-spacing: 0.04em;
+    text-transform: uppercase !important;
 
-    text-transform: uppercase;
+    color: #938585 !important;
 
-    color: #a0a0a0;
-
-    background: transparent;
+    background: transparent !important;
 }
 
 
@@ -475,20 +395,17 @@ svg {
    GRILLE DES DATES
 ========================================================= */
 
-.appointment-calendar .flatpickr-days {
+.flatpickr-days {
 
-    width: 100%;
+    width: 100%  !important ;
 }
 
 
-.appointment-calendar .dayContainer {
+.dayContainer {
 
-    width: 100%;
-
-    min-width: 100%;
-    max-width: 100%;
-
-    padding: 0;
+    width: 100%  !important ;
+    min-width: 100% !important ;
+    max-width: 100% !important;
 }
 
 
@@ -496,29 +413,30 @@ svg {
    JOUR
 ========================================================= */
 
-.appointment-calendar .flatpickr-day {
+.flatpickr-day {
 
-    display: inline-flex;
+    display: inline-flex !important;
 
-    align-items: center;
-    justify-content: center;
+    align-items: center !important;
+    justify-content: center !important;
 
-    width: 36px;
-    max-width: 36px;
+    width: 114px !important;
+    max-width: 114px !important;
 
-    height: 36px;
+    height: 60px !important;
 
-    margin: 2px auto;
+    margin: 2px auto ;
 
-    border: none;
+    border: none !important;
 
-    border-radius: 50%;
+    border-radius: 35px !important;
+    font-family: Open Sans;
 
-    font-size: 0.9rem;
+    font-size: 20px  !important;
 
-    font-weight: 400;
+    font-weight: 400 !important;
 
-    color: #333;
+    color: #333 !important;
 
     transition:
         background-color 0.2s ease,
@@ -530,15 +448,14 @@ svg {
    JOURS HORS MOIS
 ========================================================= */
 
-.appointment-calendar
 .flatpickr-day.prevMonthDay,
 
-.appointment-calendar
+
 .flatpickr-day.nextMonthDay {
 
-    color: #d0d0d0;
+    color: #d0d0d0 !important;
 
-    background: transparent;
+    background: transparent !important;
 }
 
 
@@ -546,14 +463,14 @@ svg {
    JOURS DÉSACTIVÉS
 ========================================================= */
 
-.appointment-calendar
+
 .flatpickr-day.disabled {
 
-    color: #d0d0d0;
+    color: #d0d0d0 !important;
 
-    background: transparent;
+    background: transparent !important;
 
-    cursor: default;
+    cursor: default !important;
 }
 
 
@@ -561,14 +478,13 @@ svg {
    HOVER
 ========================================================= */
 
-.appointment-calendar
 .flatpickr-day:not(.disabled):not(.selected):hover {
 
-    background: #f2eaea;
+    background: #f2eaea !important;
 
-    border: none;
+    border: none !important;
 
-    color: #741111;
+    color: #741111 !important;
 }
 
 
@@ -576,17 +492,15 @@ svg {
    JOUR SÉLECTIONNÉ
 ========================================================= */
 
-.appointment-calendar
 .flatpickr-day.selected,
 
-.appointment-calendar
 .flatpickr-day.selected:hover {
 
-    background: #5c1010;
+    background: #5c1010 !important;
 
-    border: none;
+    border: none !important;
 
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 
@@ -594,21 +508,19 @@ svg {
    AUJOURD'HUI
 ========================================================= */
 
-.appointment-calendar
 .flatpickr-day.today {
 
-    border: 1px solid #741111;
+    border: 1px solid #741111 !important;
 
-    color: #741111;
+    color: #741111  !important;
 }
 
 
-.appointment-calendar
 .flatpickr-day.today:hover {
 
-    background: #f2eaea;
+    background: #f2eaea !important;
 
-    color: #741111;
+    color: #741111  !important;
 }
 
 
@@ -616,14 +528,13 @@ svg {
    Aujourd'hui + sélectionné
 */
 
-.appointment-calendar
 .flatpickr-day.today.selected {
 
-    background: #5c1010;
+    background: #5c1010 !important;
 
     border: none;
 
-    color: #ffffff;
+    color: #ffffff  !important;
 }
 
 

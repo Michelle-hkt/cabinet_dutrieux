@@ -2,7 +2,7 @@
 
     <div class="container">
 
-        <div class="row g-4 align-items-stretch">
+        <div class="row g-4 align-items-start">
 
             {{-- ============================
                  FORMULAIRE
