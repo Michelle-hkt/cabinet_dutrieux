@@ -38,6 +38,47 @@ body {
     font-family: "Figtree", sans-serif;
 }
 
+/* =========================================================
+   WHATSAPP WIDGET
+   ========================================================= */
+
+
+.whatsapp-widget {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #25D366;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    font-size: 28px;
+
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.20);
+
+    z-index: 1000;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.whatsapp-widget:hover {
+    color: #ffffff;
+    transform: scale(1.08);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
 
 /* =========================================================
    SIDEBAR
