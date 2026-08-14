@@ -11,96 +11,96 @@
 
                 <div class="contact-info">
 
-    <img
-        src="{{ asset('build/assets/c.jpeg') }}"
-        alt=""
-        class="contact-info__image"
-    >
-
-    <div class="contact-info__overlay"></div>
-
-    <div class="contact-info__content">
-
-        <h2 class="contact-info__title">
-            {{ __('Cabinet Dutrieux') }}
-        </h2>
-
-        <div class="contact-info__items">
-
-            {{-- Adresse --}}
-            <div class="contact-info__item d-flex gap-3">
-                <i class="bi bi-geo-alt contact-info__icon"></i>
-
-                <div>
-                    <div class="contact-info__label">
-                        {{ __('Adresse') }}
-                    </div>
-
-                    <div class="contact-info__value">
-                        Rue du Commerce 124/1<br>
-                        1000 Bruxelles • Belgique
-                    </div>
-                </div>
-            </div>
-
-            {{-- Téléphone --}}
-            <div class="contact-info__item d-flex gap-3">
-                <i class="bi bi-telephone contact-info__icon"></i>
-
-                <div>
-                    <div class="contact-info__label">
-                        {{ __('Téléphone') }}
-                    </div>
-
-                    <div class="contact-info__value">
-                        +32 465 50 28 01
-                    </div>
-                </div>
-            </div>
-
-            {{-- Email --}}
-            <div class="contact-info__item d-flex gap-3">
-                <i class="bi bi-envelope contact-info__icon"></i>
-
-                <div>
-                    <div class="contact-info__label">
-                        {{ __('Email') }}
-                    </div>
-
-                    <a
-                        href="mailto:hounkpatinmichelle@gmail.com"
-                        class="contact-info__value contact-info__link"
+                    <img
+                        src="{{ asset('build/assets/c.jpeg') }}"
+                        alt=""
+                        class="contact-info__image"
                     >
-                        hounkpatinmichelle@gmail.com
-                    </a>
+
+                    <div class="contact-info__overlay"></div>
+
+                    <div class="contact-info__content">
+
+                        <h2 class="contact-info__title">
+                            {{ __('Cabinet Dutrieux') }}
+                        </h2>
+
+                        <div class="contact-info__items">
+
+                            {{-- Adresse --}}
+                            <div class="contact-info__item d-flex gap-3">
+                                <i class="bi bi-geo-alt contact-info__icon"></i>
+
+                                <div>
+                                    <div class="contact-info__label">
+                                        {{ __('Adresse') }}
+                                    </div>
+
+                                    <div class="contact-info__value">
+                                        Rue du Commerce 124/1<br>
+                                        1000 Bruxelles • Belgique
+                                    </div>
+                                </div>
+                            </div>
+
+                            {{-- Téléphone --}}
+                            <div class="contact-info__item d-flex gap-3">
+                                <i class="bi bi-telephone contact-info__icon"></i>
+
+                                <div>
+                                    <div class="contact-info__label">
+                                        {{ __('Téléphone') }}
+                                    </div>
+
+                                    <div class="contact-info__value">
+                                        +32 465 50 28 01
+                                    </div>
+                                </div>
+                            </div>
+
+                            {{-- Email --}}
+                            <div class="contact-info__item d-flex gap-3">
+                                <i class="bi bi-envelope contact-info__icon"></i>
+
+                                <div>
+                                    <div class="contact-info__label">
+                                        {{ __('Email') }}
+                                    </div>
+
+                                    <a
+                                        href="mailto:hounkpatinmichelle@gmail.com"
+                                        class="contact-info__value contact-info__link"
+                                    >
+                                        hounkpatinmichelle@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            {{-- Horaires --}}
+                            <div class="contact-info__item d-flex gap-3">
+                                <i class="bi bi-clock contact-info__icon"></i>
+
+                                <div>
+                                    <div class="contact-info__label">
+                                        {{ __('Horaires') }}
+                                    </div>
+
+                                    <div class="contact-info__value">
+                                        Lun - Ven:<br>8h30 à 12h30<br>
+                                        13h30 à 17h00
+                                    </div>
+
+                                    <div class="contact-info__appointment">
+                                        {{ __('Prenez rendez-vous') }}
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
-            </div>
-
-            {{-- Horaires --}}
-            <div class="contact-info__item d-flex gap-3">
-                <i class="bi bi-clock contact-info__icon"></i>
-
-                <div>
-                    <div class="contact-info__label">
-                        {{ __('Horaires') }}
-                    </div>
-
-                    <div class="contact-info__value">
-                        Lun - Ven:<br>8h30 à 12h30<br>
-                        13h30 à 17h00
-                    </div>
-
-                    <div class="contact-info__appointment">
-                        {{ __('Prenez rendez-vous') }}
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
 
             </div>
 
@@ -112,7 +112,7 @@
 
                 <div class="contact-form">
 
-                    <form >
+                    <form action="{{ route('contact.send') }}" method="POST">
 
                         @csrf
 
@@ -124,15 +124,15 @@
                                     <input
                                         type="text"
                                         class="form-control"
-                                        id="first_name"
-                                        name="first_name"
+                                        id="firstname"
+                                        name="firstname"
                                         placeholder="Prénom"
-                                        value="{{ old('first_name') }}"
+                                        value="{{ old('firstname') }}"
                                         required
                                     >
 
-                                    <label for="first_name">
-                                        {{ __('Prénom') }}
+                                    <label for="firstname">
+                                        Prénom
                                     </label>
                                 </div>
                             </div>
@@ -142,15 +142,15 @@
                                     <input
                                         type="text"
                                         class="form-control"
-                                        id="last_name"
-                                        name="last_name"
+                                        id="lastname"
+                                        name="lastname"
                                         placeholder="Nom"
-                                        value="{{ old('last_name') }}"
+                                        value="{{ old('lastname') }}"
                                         required
                                     >
 
-                                    <label for="last_name">
-                                        {{ __('Nom') }}
+                                    <label for="lastname">
+                                        Nom
                                     </label>
                                 </div>
                             </div>
@@ -174,7 +174,7 @@
                                     >
 
                                     <label for="email">
-                                        {{ __('Email') }}
+                                        Email
                                     </label>
                                 </div>
                             </div>
@@ -191,7 +191,7 @@
                                     >
 
                                     <label for="phone">
-                                        {{ __('Téléphone') }}
+                                        Téléphone
                                     </label>
                                 </div>
                             </div>
@@ -204,15 +204,15 @@
                             <input
                                 type="text"
                                 class="form-control"
-                                id="subject"
-                                name="subject"
+                                id="object"
+                                name="object"
                                 placeholder="Objet"
-                                value="{{ old('subject') }}"
+                                value="{{ old('object') }}"
                                 required
                             >
 
-                            <label for="subject">
-                                {{ __('Objet') }}
+                            <label for="object">
+                                Objet
                             </label>
                         </div>
 
@@ -228,7 +228,7 @@
                             >{{ old('message') }}</textarea>
 
                             <label for="message">
-                                {{ __('Message') }}
+                                Message
                             </label>
                         </div>
 
@@ -249,10 +249,10 @@
                                 class="form-check-label"
                                 for="privacy"
                             >
-                                {{ __('J’accepte que mes données soient traitées par le Cabinet Dutrieux afin de répondre à ma demande. Pour plus d’informations, consultez notre') }}
+                                'J’accepte que mes données soient traitées par le Cabinet Dutrieux afin de répondre à ma demande. Pour plus d’informations, consultez notre
 
                                 <a href="#">
-                                    {{ __('politique de confidentialité') }}
+                                    'politique de confidentialité
                                 </a>.
                             </label>
 
@@ -266,7 +266,7 @@
                                 type="submit"
                                 class="btn contact-form__button"
                             >
-                                {{ __('Envoyer ma demande') }}
+                                Envoyer ma demande
 
                                 <i class="bi bi-arrow-right"></i>
                             </button>
