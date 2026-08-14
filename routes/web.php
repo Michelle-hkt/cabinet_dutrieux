@@ -1,29 +1,22 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', function () {return view('welcome');})->name('home');
 
-Route::get('/services', function () {
-    return view('pages.services');
-})->name('services');
+Route::get('/services', function () {return view('pages.services');})->name('services');
 
+Route::get('/blog', function () {return view('pages.blog');})->name('blog');
 
-Route::get('/blog', function () {
-    return view('pages.blog');
-})->name('blog');
+Route::get('/contact', function () {return view('pages.contact');})->name('contact');
 
-Route::get('/contact', function () {
-    return view('pages.contact');
-})->name('contact');
+Route::get('/rendez-vous', function () {return view('pages.rendez-vous');})->name('appointment');
 
 
-Route::get('/rendez-vous', function () {
-    return view('pages.rendez-vous');
-})->name('appointment');
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
+
 
 Route::get('/language/{locale}', function (string $locale) {
 
@@ -37,8 +30,6 @@ Route::get('/language/{locale}', function (string $locale) {
     return redirect()->back();
 
 })->name('language.switch');
-
-
 
 Route::get('/dashboard', function () {
     return view('dashboard');
