@@ -13,11 +13,11 @@
             <div class="home-team__heading">
 
                 <span class="home-team__kicker animate-reveal-left">
-                    {{ __("L'ÉQUIPE") }}
+                    L'ÉQUIPE
                 </span>
 
                 <h2 class="home-team__title animate-reveal-up animate-delay-1">
-                    {{ __('Nos Membres Associés.') }}
+                    Nos Membres Associés.
                 </h2>
 
             </div>
@@ -91,19 +91,12 @@
                                 </div>
 
                                 <h3 class="home-team__name">
-                                    {{ __('Maître Benoît GEUBELLE') }}
+                                   Maître Benoît GEUBELLE
                                 </h3>
 
                                 <span class="home-team__role">
-                                    {{ __('Notaire titulaire') }}
+                                    Notaire titulaire
                                 </span>
-
-                                <a
-                                    href="mailto:BG@notairegeubelle.be"
-                                    class="home-team__email"
-                                >
-                                    BG@notairegeubelle.be
-                                </a>
 
                             </article>
 
@@ -128,19 +121,12 @@
                                 </div>
 
                                 <h3 class="home-team__name">
-                                    {{ __('Marina RENIERS') }}
+                                    Marina RENIERS
                                 </h3>
 
                                 <span class="home-team__role">
-                                    {{ __('Collaboratrice') }}
+                                    Collaboratrice
                                 </span>
-
-                                <a
-                                    href="mailto:RM@notairegeubelle.be"
-                                    class="home-team__email"
-                                >
-                                    RM@notairegeubelle.be
-                                </a>
 
                             </article>
 
@@ -165,19 +151,12 @@
                                 </div>
 
                                 <h3 class="home-team__name">
-                                    {{ __('Alicia MOLDES GONZALEZ') }}
+                                    Alicia MOLDES GONZALEZ
                                 </h3>
 
                                 <span class="home-team__role">
-                                    {{ __('Juriste') }}
+                                    Juriste
                                 </span>
-
-                                <a
-                                    href="mailto:AMG@notairegeubelle.be"
-                                    class="home-team__email"
-                                >
-                                    AMG@notairegeubelle.be
-                                </a>
 
                             </article>
 
@@ -213,19 +192,12 @@
                                 </div>
 
                                 <h3 class="home-team__name">
-                                    {{ __('Eric BRASSEUR') }}
+                                    Eric BRASSEUR
                                 </h3>
 
                                 <span class="home-team__role">
-                                    {{ __('Juriste') }}
+                                    Juriste
                                 </span>
-
-                                <a
-                                    href="mailto:EB@notairegeubelle.be"
-                                    class="home-team__email"
-                                >
-                                    EB@notairegeubelle.be
-                                </a>
 
                             </article>
 
@@ -250,19 +222,12 @@
                                 </div>
 
                                 <h3 class="home-team__name">
-                                    {{ __('Luc POSSOZ') }}
+                                    Luc POSSOZ
                                 </h3>
 
                                 <span class="home-team__role">
-                                    {{ __('Notaire honoraire') }}
+                                    Notaire honoraire
                                 </span>
-
-                                <a
-                                    href="mailto:LP@notairegeubelle.be"
-                                    class="home-team__email"
-                                >
-                                    LP@notairegeubelle.be
-                                </a>
 
                             </article>
 
@@ -287,19 +252,12 @@
                                 </div>
 
                                 <h3 class="home-team__name">
-                                    {{ __('Eline DEMUYNCK') }}
+                                   Eline DEMUYNCK
                                 </h3>
 
                                 <span class="home-team__role">
-                                    {{ __('Collaboratrice') }}
+                                    Collaboratrice
                                 </span>
-
-                                <a
-                                    href="mailto:ED@notairegeubelle.be"
-                                    class="home-team__email"
-                                >
-                                    ED@notairegeubelle.be
-                                </a>
 
                             </article>
 
@@ -335,19 +293,12 @@
                                 </div>
 
                                 <h3 class="home-team__name">
-                                    {{ __('Océane FEUILLET') }}
+                                    Océane FEUILLET
                                 </h3>
 
                                 <span class="home-team__role">
-                                    {{ __('Juriste') }}
+                                    Juriste
                                 </span>
-
-                                <a
-                                    href="mailto:OF@notairegeubelle.be"
-                                    class="home-team__email"
-                                >
-                                    OF@notairegeubelle.be
-                                </a>
 
                             </article>
 

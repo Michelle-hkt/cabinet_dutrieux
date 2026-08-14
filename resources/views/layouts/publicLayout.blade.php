@@ -25,6 +25,9 @@
     {{-- Footer public --}}
     @include('components.publicLayout.public-footer')
 
+    
+
+    <x-whatsapp-widget />
 </body>
 
 </html>

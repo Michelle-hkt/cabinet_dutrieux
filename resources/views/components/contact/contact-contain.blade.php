@@ -2,12 +2,12 @@
 
     <div class="container">
 
-        <div class="row g-15 contact-wrapper">
+        <div class="row g-5 contact-wrapper">
 
             {{-- ============================
                  COORDONNÉES
             ============================= --}}
-            <div class="col-lg-4 ">
+            <div class="col-lg-4 order-2 order-lg-1 ">
 
                 <div class="contact-info">
 
@@ -108,7 +108,7 @@
             {{-- ============================
                  FORMULAIRE
             ============================= --}}
-            <div class="col-lg-8">
+            <div class="col-lg-8 order-1 order-lg-2">
 
                 <div class="contact-form">
 
