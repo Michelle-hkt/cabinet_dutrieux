@@ -119,7 +119,7 @@
                     <div class="home-why-us__image animate-zoom-out">
 
                         <img
-                            src="{{ asset('build/assets/img3.png') }}"
+                            src="{{ asset('build/assets/new/im4.jpeg') }}"
                             alt="{{ __('Salle de réunion du cabinet') }}"
                             loading="lazy"
                         >

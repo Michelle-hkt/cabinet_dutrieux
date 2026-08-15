@@ -9,7 +9,7 @@
     <div class="home-philosophy__background animate-zoom-out">
 
         <img
-            src="{{ asset('build/assets/img2.png') }}"
+            src="{{ asset('build/assets/new/im7.jpeg') }}"
             alt="{{ __('Une famille réunie dans un intérieur chaleureux') }}"
             loading="lazy"
         >

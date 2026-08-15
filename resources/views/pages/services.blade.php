@@ -17,7 +17,7 @@
         __('Financement et refinancement hypothécaire'),
         __('etc.')
     ]"
-    image="{{ asset('build/assets/services/s.png') }}"
+    image="{{ asset('build/assets/services/s.jpeg') }}"
     image-position="right"
     cta-label="{{ __('Prendre rendez-vous') }}"
     cta-route="appointment"
@@ -36,7 +36,7 @@
         __('Planification successorale et patrimoniale'),
         __('etc.')
     ]"
-    image="{{ asset('build/assets/services/s1.png') }}"
+    image="{{ asset('build/assets/services/s1.jpeg') }}"
     image-position="left"
     cta-label="{{ __('Prendre rendez-vous') }}"
     cta-route="appointment"
@@ -53,7 +53,7 @@
         __('Déclaration d’hérédité'),
         __('etc.')
     ]"
-    image="{{ asset('build/assets/services/s2.png') }}"
+    image="{{ asset('build/assets/services/s2.jpeg') }}"
     image-position="right"
     cta-label="{{ __('Prendre rendez-vous') }}"
     cta-route="appointment"
@@ -71,7 +71,7 @@
         __('Liquidation et dissolution d’entreprise'),
         __('etc.')
     ]"
-    image="{{ asset('build/assets/services/s4.png') }}"
+    image="{{ asset('build/assets/services/s3.jpeg') }}"
     image-position="left"
     cta-label="{{ __('Prendre rendez-vous') }}"
     cta-route="appointment"
