@@ -1,4 +1,4 @@
-<header class="public-header header--transparent position-fixed top-0 start-0 w-100">
+<header class="blog-header ">
 
     <nav class="navbar navbar-expand-lg">
 
@@ -8,14 +8,14 @@
                  LOGO
             ====================================================== --}}
             <a
-                class="navbar-brand navbar-brand-dutrieux"
+                class="navbar-brand blog-header__brand"
                 href="{{ route('home') }}"
             >
-                <span class="brand-name">
+                <span class="blog-header__brand-name">
                     DUTRIEUX
                 </span>
 
-                <span class="brand-tagline">
+                <span class="blog-header__brand-tagline">
                     CABINET
                 </span>
             </a>
@@ -25,13 +25,13 @@
                  BOUTON MENU MOBILE
             ====================================================== --}}
             <button
-                class="navbar-toggler border-0 shadow-none"
+                class="navbar-toggler blog-header__toggler border-0 shadow-none"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#publicNavbar"
-                aria-controls="publicNavbar"
+                data-bs-target="#blogNavbar"
+                aria-controls="blogNavbar"
                 aria-expanded="false"
-                aria-label="Ouvrir la navigation"
+                aria-label="{{ __('Ouvrir la navigation') }}"
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,53 +42,62 @@
             ====================================================== --}}
             <div
                 class="collapse navbar-collapse"
-                id="publicNavbar"
+                id="blogNavbar"
             >
 
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav blog-header__nav mx-auto mb-2 mb-lg-0">
 
                     {{-- Accueil --}}
-                    <li class="nav-item">
+                    <li class="nav-item blog-header__nav-item">
+
                         <a
-                            class="nav-link public-header__link {{ request()->routeIs('home') ? 'active' : '' }}"
+                            class="nav-link blog-header__link {{ request()->routeIs('home') ? 'active' : '' }}"
                             href="{{ route('home') }}"
                         >
                             {{ __('ACCUEIL') }}
                         </a>
+
                     </li>
 
 
                     {{-- Services --}}
-                    <li class="nav-item">
+                    <li class="nav-item blog-header__nav-item">
+
                         <a
-                            class="nav-link public-header__link {{ request()->routeIs('services') ? 'active' : '' }}"
+                            class="nav-link blog-header__link {{ request()->routeIs('services') ? 'active' : '' }}"
                             href="{{ route('services') }}"
                         >
                             {{ __('NOS SERVICES') }}
                         </a>
+
                     </li>
 
 
                     {{-- Blog --}}
-                    <li class="nav-item">
+                    <li class="blog-header__nav-item">
+
                         <a
-                            class="nav-link public-header__link {{ request()->routeIs('blog') ? 'active' : '' }}"
+                            class="blog-header__link {{ request()->routeIs('blog') || request()->routeIs('blog.show') ? 'active' : '' }}"
                             href="{{ route('blog') }}"
                         >
                             {{ __('ARTICLES & BLOG') }}
                         </a>
+
                     </li>
 
+
                     {{-- Contact --}}
-                    <li class="nav-item">
+                    <li class="blog-header__nav-item">
+
                         <a
-                            class="nav-link public-header__link {{ request()->routeIs('contact') ? 'active' : '' }}"
+                            class="nav-link blog-header__link {{ request()->routeIs('contact') ? 'active' : '' }}"
                             href="{{ route('contact') }}"
                         >
                             {{ __('CONTACT') }}
                         </a>
+
                     </li>
-                    </li>
+
 
                 </ul>
 
@@ -96,15 +105,15 @@
                 {{-- =================================================
                      ACTIONS
                 ================================================== --}}
-                <div class="d-flex align-items-center gap-3">
+                <div class="blog-header__actions d-flex align-items-center">
 
                     {{-- =================================================
                          SÉLECTEUR DE LANGUE
                     ================================================== --}}
-                    <div class="dropdown public-header__language">
+                    <div class="dropdown blog-header__language">
 
                         <button
-                            class="btn dropdown-toggle public-header__language-button"
+                            class="btn blog-header__language-button dropdown-toggle"
                             type="button"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
@@ -112,22 +121,24 @@
                             {{ strtoupper(app()->getLocale()) }}
                         </button>
 
-                        <ul class="dropdown-menu dropdown-menu-end">
+
+                        <ul class="dropdown-menu dropdown-menu-end blog-header__language-menu">
 
                             {{-- Français --}}
                             <li>
                                 <a
-                                    class="dropdown-item {{ app()->getLocale() === 'fr' ? 'active' : '' }}"
+                                    class="dropdown-item blog-header__language-item {{ app()->getLocale() === 'fr' ? 'active' : '' }}"
                                     href="{{ route('language.switch', 'fr') }}"
                                 >
                                     {{ __('Français') }}
                                 </a>
                             </li>
 
+
                             {{-- English --}}
                             <li>
                                 <a
-                                    class="dropdown-item {{ app()->getLocale() === 'en' ? 'active' : '' }}"
+                                    class="dropdown-item blog-header__language-item {{ app()->getLocale() === 'en' ? 'active' : '' }}"
                                     href="{{ route('language.switch', 'en') }}"
                                 >
                                     {{ __('English') }}
@@ -138,10 +149,6 @@
 
                     </div>
 
-
-                    {{-- =================================================
-                         DASHBOARD
-                    ================================================== --}}
                     <a
                         href="{{ route('appointment') }}"
                         class="blog-header__appointment"

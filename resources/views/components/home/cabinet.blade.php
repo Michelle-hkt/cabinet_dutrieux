@@ -145,7 +145,7 @@
                         class="home-cabinet__image home-cabinet__image--large animate-zoom-out"
                     >
                         <img
-                            src="{{ asset('build/assets/img.png') }}"
+                            src="{{ asset('build/assets/new/a.jpeg') }}"
                             alt="{{ __('Façade du cabinet') }}"
                             loading="lazy"
                         >
@@ -157,14 +157,14 @@
                         class="home-cabinet__image home-cabinet__image--small animate-scale-in animate-delay-2"
                     >
                         <img
-                            src="{{ asset('build/assets/img1.png') }}"
+                            src="{{ asset('build/assets/new/im3.jpeg') }}"
                             alt="{{ __('Intérieur élégant du cabinet') }}"
                             loading="lazy"
                         >
 
                         {{-- Badge --}}
                         <div class="home-cabinet__badge">
-                            <i class="bi bi-house"></i>
+                            <i class="bi bi-shield"></i>
                         </div>
                     </div>
 

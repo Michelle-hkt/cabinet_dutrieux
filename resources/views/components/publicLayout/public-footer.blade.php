@@ -51,19 +51,19 @@
                     </li>
 
                     <li>
-                        <a href="#services">
+                        <a href="{{ url('services') }}">
                             Nos services
                         </a>
                     </li>
 
                     <li>
-                        <a href="#blog">
+                        <a href="{{ url('/blog') }}">
                             Article & blog
                         </a>
                     </li>
 
                     <li>
-                        <a href="#rendez-vous">
+                        <a href="{{ url('/appointment') }}">
                             Rendez-vous
                         </a>
                     </li>
@@ -87,21 +87,21 @@
                     <p>
                         <i class="bi bi-geo-alt"></i>
                         <span>
-                            Adresse du cabinet
+                            Rue du Mail 1050 IXELLES CEDEX 4
                         </span>
                     </p>
 
                     <p>
                         <i class="bi bi-telephone"></i>
-                        <a href="tel:+22900000000">
-                            +229 00 00 00 00
+                        <a href="tel:+32465502801">
+                            +32 465 50 28 01
                         </a>
                     </p>
 
                     <p>
                         <i class="bi bi-envelope"></i>
                         <a href="mailto:contact@dutrieux.notaires">
-                            contact@dutrieux.notaires
+                            contact@cabinetdutrieux.be
                         </a>
                     </p>
 
@@ -128,7 +128,7 @@
                     Mentions légales
                 </a>
 
-                <a href="#">
+                <a href= "{{ url('/privacy-policy') }}" >
                     Politique de confidentialité
                 </a>
 
