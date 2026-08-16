@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Votre demande a bien été reçue</title>
+    <title>Votre requête a bien été reçue</title>
 
     <style>
         html,
         body {
-            margin:0 !important;
-            padding:0 !important;
-            width:100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
         }
 
         body {
-            -webkit-text-size-adjust:100%;
-            -ms-text-size-adjust:100%;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
         }
 
-        @media screen and (max-width:600px) {
-
+        @media screen and (max-width: 600px) {
             .mail-body {
                 padding:20px 10px !important;
             }
@@ -95,6 +94,7 @@
                         <div
                             class="mail-brand"
                             style="
+                                margin:0;
                                 color:#681f2d;
                                 font-family:Georgia, 'Times New Roman', serif;
                                 font-size:36px;
@@ -122,6 +122,9 @@
                 </tr>
 
 
+                
+
+
                 <!-- Title -->
 
                 <tr>
@@ -138,7 +141,7 @@
                                 line-height:1.3;
                             "
                         >
-                            Votre demande a bien été reçue
+                            Votre requête a bien été reçue
                         </h1>
 
                     </td>
@@ -189,14 +192,12 @@
                             </strong>,
                         </p>
 
-
                         <p style="margin:0 0 20px;">
-                            Nous vous remercions d'avoir pris contact
+                            Nous vous remercions d'avoir pris rendez-vous
                             avec le Cabinet Dutrieux.
-                            Votre demande a bien été reçue par notre équipe
+                            Votre requête a bien été reçue par notre équipe
                             et sera examinée avec attention.
                         </p>
-
 
                         <p style="margin:0 0 20px;">
                             Nous reviendrons vers vous dans les meilleurs
@@ -213,7 +214,7 @@
                 <tr>
                     <td
                         style="
-                            padding-top:10px;
+                            padding:10px 0 0;
                             text-align:left;
                         "
                     >
@@ -227,7 +228,6 @@
                                 font-style:italic;
                             "
                         >
-
                             <strong
                                 style="
                                     color:#2f292a;
@@ -240,11 +240,13 @@
                             </strong>
 
                             Ce mail confirme uniquement la réception
-                            de votre demande.
-                            Notre équipe va prendre connaissance de votre
-                            message et reviendra vers vous dans les meilleurs
-                            délais.
+                            de votre demande de rendez-vous.
+                            Il ne constitue pas encore une confirmation
+                            définitive.
 
+                            Notre secrétariat prendra contact avec vous
+                            très prochainement pour confirmer définitivement
+                            l'horaire demandé ou vous proposer une alternative.
                         </p>
 
                     </td>
@@ -254,7 +256,12 @@
                 <!-- Signature -->
 
                 <tr>
-                    <td style="text-align:left;">
+                    <td
+                        style="
+                            padding-top:0;
+                            text-align:left;
+                        "
+                    >
 
                         <p
                             style="

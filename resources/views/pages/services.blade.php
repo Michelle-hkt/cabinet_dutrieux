@@ -21,7 +21,7 @@
     image-position="right"
     cta-label="{{ __('Prendre rendez-vous') }}"
     cta-route="appointment"
-/>
+    />
 
 <x-services.service-item
     title="{{ __('Droit des personnes et de la famille') }}"

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Nouvelle demande de contact</title>
+    <title>Prise de rendez-vous : Nouvelle demande</title>
 
     <style>
         html,
@@ -164,7 +164,7 @@
                                 line-height:1.3;
                             "
                         >
-                            Nouvelle demande de contact
+                            Nouvelle demande de rendez-vous
                         </h1>
 
                         <div
@@ -177,38 +177,6 @@
                                 line-height:0;
                             "
                         ></div>
-
-                    </td>
-                </tr>
-
-
-                <!-- =====================================================
-                     INTRODUCTION
-                ====================================================== -->
-
-                <tr>
-                    <td
-                        align="center"
-                        style="
-                            padding-bottom:38px;
-                            color:#63565a;
-                            font-family:Arial, Helvetica, sans-serif;
-                            font-size:14px;
-                            line-height:1.7;
-                            text-align:center;
-                        "
-                    >
-
-                        <p style="margin:0;">
-
-                            Une nouvelle requête de la part
-
-                            <strong style="color:#681f2d;">
-                                {{ $data['firstname'] ?? '' }}
-                                {{ $data['lastname'] ?? '' }}
-                            </strong>.
-
-                        </p>
 
                     </td>
                 </tr>
@@ -275,8 +243,10 @@
                         >
                             <tr>
 
-                                <td style="padding:0;">
-
+                                <td
+                                    valign="middle"
+                                    style="padding:0;"
+                                >
                                     <div
                                         style="
                                             color:#8a7c7f;
@@ -303,7 +273,6 @@
                                         {{ $data['firstname'] ?? '' }}
                                         {{ $data['lastname'] ?? '' }}
                                     </div>
-
                                 </td>
 
                             </tr>
@@ -322,8 +291,10 @@
                         >
                             <tr>
 
-                                <td style="padding:0;">
-
+                                <td
+                                    valign="middle"
+                                    style="padding:0;"
+                                >
                                     <div
                                         style="
                                             color:#8a7c7f;
@@ -350,7 +321,6 @@
                                     >
                                         {{ $data['email'] ?? '' }}
                                     </div>
-
                                 </td>
 
                             </tr>
@@ -371,8 +341,10 @@
                             >
                                 <tr>
 
-                                    <td style="padding:0;">
-
+                                    <td
+                                        valign="middle"
+                                        style="padding:0;"
+                                    >
                                         <div
                                             style="
                                                 color:#8a7c7f;
@@ -398,7 +370,6 @@
                                         >
                                             {{ $data['phone'] }}
                                         </div>
-
                                     </td>
 
                                 </tr>
@@ -411,7 +382,7 @@
 
 
                 <!-- =====================================================
-                     INFORMATIONS DE LA DEMANDE
+                     INFORMATIONS DU RENDEZ-VOUS
                 ====================================================== -->
 
                 <tr>
@@ -446,7 +417,7 @@
                                         line-height:1.4;
                                     "
                                 >
-                                    INFORMATIONS DE LA DEMANDE
+                                    INFORMATIONS DU RENDEZ-VOUS
                                 </td>
 
                                 <td
@@ -463,7 +434,7 @@
                         </table>
 
 
-                        <!-- Objet -->
+                        <!-- Motif -->
 
                         <table
                             role="presentation"
@@ -475,7 +446,10 @@
                         >
                             <tr>
 
-                                <td style="padding:0;">
+                                <td
+                                    valign="middle"
+                                    style="padding:0;"
+                                >
 
                                     <div
                                         style="
@@ -487,7 +461,7 @@
                                             line-height:1.4;
                                         "
                                     >
-                                        OBJET
+                                        MOTIF DE LA CONSULTATION
                                     </div>
 
                                     <div
@@ -500,7 +474,105 @@
                                             line-height:1.5;
                                         "
                                     >
-                                        {{ $data['object'] ?? '' }}
+                                        {{ $data['reason'] ?? '' }}
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                        </table>
+
+
+                        <!-- Date -->
+
+                        <table
+                            role="presentation"
+                            width="100%"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="margin-top:23px;"
+                        >
+                            <tr>
+
+                                <td
+                                    valign="middle"
+                                    style="padding:0;"
+                                >
+
+                                    <div
+                                        style="
+                                            color:#8a7c7f;
+                                            font-family:Arial, Helvetica, sans-serif;
+                                            font-size:10px;
+                                            font-weight:600;
+                                            letter-spacing:0.1em;
+                                            line-height:1.4;
+                                        "
+                                    >
+                                        DATE SOUHAITÉE
+                                    </div>
+
+                                    <div
+                                        class="mail-info-value"
+                                        style="
+                                            margin-top:2px;
+                                            color:#383133;
+                                            font-family:Arial, Helvetica, sans-serif;
+                                            font-size:14px;
+                                            line-height:1.5;
+                                        "
+                                    >
+                                        {{ $data['date'] ?? '' }}
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                        </table>
+
+
+                        <!-- Heure -->
+
+                        <table
+                            role="presentation"
+                            width="100%"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="margin-top:23px;"
+                        >
+                            <tr>
+
+                                <td
+                                    valign="middle"
+                                    style="padding:0;"
+                                >
+
+                                    <div
+                                        style="
+                                            color:#8a7c7f;
+                                            font-family:Arial, Helvetica, sans-serif;
+                                            font-size:10px;
+                                            font-weight:600;
+                                            letter-spacing:0.1em;
+                                            line-height:1.4;
+                                        "
+                                    >
+                                        HEURE
+                                    </div>
+
+                                    <div
+                                        class="mail-info-value"
+                                        style="
+                                            margin-top:2px;
+                                            color:#383133;
+                                            font-family:Arial, Helvetica, sans-serif;
+                                            font-size:14px;
+                                            line-height:1.5;
+                                        "
+                                    >
+                                        {{ $data['time'] ?? '' }}
                                     </div>
 
                                 </td>
@@ -521,7 +593,10 @@
                         >
                             <tr>
 
-                                <td style="padding:0;">
+                                <td
+                                    valign="top"
+                                    style="padding:0;"
+                                >
 
                                     <div
                                         style="
@@ -561,23 +636,6 @@
                             "{{ $data['message'] ?? '' }}"
                         </div>
 
-                    </td>
-                </tr>
-
-
-                <!-- =====================================================
-                     ESPACE FINAL
-                ====================================================== -->
-
-                <tr>
-                    <td
-                        style="
-                            height:35px;
-                            font-size:0;
-                            line-height:0;
-                        "
-                    >
-                        &nbsp;
                     </td>
                 </tr>
 

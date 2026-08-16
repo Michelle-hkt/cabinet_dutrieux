@@ -9,7 +9,7 @@ use Illuminate\Http\RedirectResponse;
 class ContactController extends Controller
 {
 
-public function __construct(private ContactService $contactService) {}
+    public function __construct(private ContactService $contactService) {}
 
     public function send(ContactRequest $request): RedirectResponse
     {

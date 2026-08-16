@@ -37,8 +37,7 @@
                                     </div>
 
                                     <div class="contact-info__value">
-                                        Rue du Commerce 124/1<br>
-                                        1000 Bruxelles • Belgique
+                                        Rue du Mail 1050 IXELLES CEDEX 4 • Belgique
                                     </div>
                                 </div>
                             </div>
@@ -71,7 +70,7 @@
                                         href="mailto:hounkpatinmichelle@gmail.com"
                                         class="contact-info__value contact-info__link"
                                     >
-                                        hounkpatinmichelle@gmail.com
+                                        contact@cabinetdutrieux.be
                                     </a>
                                 </div>
                             </div>
@@ -111,6 +110,22 @@
             <div class="col-lg-8 order-1 order-lg-2">
 
                 <div class="contact-form">
+                    @if ($errors->any())
+                        <div class="alert alert-danger mb-4 auto-dismiss-alert">
+                            <ul class="mb-0">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    @if (session('success'))
+                        <div class="alert alert-success mb-4 auto-dismiss-alert">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
 
                     <form action="{{ route('contact.send') }}" method="POST">
 

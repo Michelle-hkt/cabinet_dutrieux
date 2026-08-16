@@ -1,13 +1,24 @@
-@props([
-    'action' => '#',
-])
+
 
 <div class="main-contain-form">
 
-    <form
-        action="{{ $action }}"
-        method="POST"
-        class="appointment-form"
+    @if ($errors->any())
+        <div class="alert alert-danger mb-4 auto-dismiss-alert">
+            <ul class="mb-0">
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
+    @if (session('success'))
+        <div class="alert alert-success mb-4 auto-dismiss-alert">
+            {{ session('success') }}
+        </div>
+    @endif
+
+    <form action="{{ route('appointment.send') }}" method="POST" class="appointment-form"
     >
 
         @csrf
@@ -43,6 +54,7 @@
         type="hidden"
         name="date"
         id="appointment-date"
+        value="{{ old('date') }}"
         required
     >
 
@@ -95,6 +107,10 @@
 
                         <option value="entreprise">
                             {{ __('Entreprise') }}
+                        </option>
+
+                        <option value="other">
+                            {{ __('Autre') }}
                         </option>
                     </select>
 
@@ -165,7 +181,7 @@
                 <div class="col-md-6">
 
                     <label
-                        for="last-name"
+                        for="lastname"
                         class="form-label appointment-form__label"
                     >
                         {{ __('Nom') }} *
@@ -173,11 +189,11 @@
 
                     <input
                         type="text"
-                        name="last_name"
-                        id="last-name"
+                        name="lastname"
+                        id="lastname"
                         class="form-control appointment-form__input"
                         placeholder="{{ __('Votre nom') }}"
-                        value="{{ old('last_name') }}"
+                        value="{{ old('lastname') }}"
                         required
                     >
 
@@ -187,7 +203,7 @@
                 <div class="col-md-6">
 
                     <label
-                        for="first-name"
+                        for="firstname"
                         class="form-label appointment-form__label"
                     >
                         {{ __('Prénom') }} *
@@ -195,11 +211,11 @@
 
                     <input
                         type="text"
-                        name="first_name"
-                        id="first-name"
+                        name="firstname"
+                        id="firstname"
                         class="form-control appointment-form__input"
                         placeholder="{{ __('Votre prénom') }}"
-                        value="{{ old('first_name') }}"
+                        value="{{ old('firstname') }}"
                         required
                     >
 
@@ -272,6 +288,7 @@
                     id="appointment-message"
                     class="form-control appointment-form__textarea"
                     rows="4"
+                    value="{{ old('message') }}"
                     placeholder="{{ __('Précisions éventuelles...') }}"
                 >{{ old('message') }}</textarea>
 

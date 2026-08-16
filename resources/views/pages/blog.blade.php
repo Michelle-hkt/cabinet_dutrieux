@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    BLADE
-</body>
-</html>
+@extends('layouts.publicLayout')
+
+@section('title', config('app.name', 'Cabinet Dutrieux Notaires'))
+
+@section('content')
+
+    <x-blog.hero-blog />
+
+    <x-blog.main-contain-blog :articles="$articles" />
+
+@endsection

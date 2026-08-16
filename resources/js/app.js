@@ -110,7 +110,7 @@ if (appointmentCalendar && appointmentDate) {
 
         minDate: 'today',
 
-        dateFormat: 'Y-M-D',
+        dateFormat: 'Y-m-d',
 
         monthSelectorType: 'static',
 
@@ -127,3 +127,20 @@ if (appointmentCalendar && appointmentDate) {
     });
 
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const alerts = document.querySelectorAll('.auto-dismiss-alert');
+
+    alerts.forEach((alert) => {
+        setTimeout(() => {
+            alert.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            alert.style.opacity = '0';
+            alert.style.transform = 'translateY(-10px)';
+
+            setTimeout(() => {
+                alert.remove();
+            }, 300);
+        }, 3000);
+    });
+});

@@ -34,8 +34,7 @@
         </div>
 
         <div class="main-contain-info__value">
-            Rue du Commerce 124/1<br>
-            1000 Bruxelles • Belgique
+            Rue du Mail 1050 IXELLES CEDEX 4 • Belgique
         </div>
 
     </div>
@@ -60,7 +59,7 @@
             <div>
                 <strong>E.</strong>
                 <a
-                    href="mailto:hounkpatinmichelle@gmail.com"
+                    href="mailto:contact@cabinetdutrieux.be"
                     class="main-contain-info__link"
                 >
                     hounkpatinmichelle@gmail.com
